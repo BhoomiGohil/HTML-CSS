@@ -1,0 +1,84 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Geneva, sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  max-width: 250px;
+}
+
+a {
+  color: #2772b0;
+}
+
+.row {
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.yellow,
+.purple,
+.pink,
+.blue {
+  float: left;
+  margin: 0% 0.5%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.yellow {
+  width: 24%;
+  background-color: #ffc;
+}
+
+.pink {
+  width: 49%;
+  background-color: #fcf;
+}
+
+.blue {
+  width: 74%;
+  background-color: #cff;
+}
+
+.purple {
+  width: 99%;
+  background-color: #ccf;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .yellow,
+  .pink,
+  .blue {
+    width: 49%;
+  }
+
+  .purple {
+    width: 100%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .yellow,
+  .pink,
+  .blue,
+  .purple {
+    width: 100%;
+    float: none;
+  }
+}
