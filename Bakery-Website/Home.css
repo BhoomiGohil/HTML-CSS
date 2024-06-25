@@ -1,0 +1,33 @@
+/* Home */
+
+.home-hero-image {
+  height: 183px;
+  background: url("Images/header-1200.jpg") no-repeat;
+}
+
+.content .home {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 849px) {
+  .home-hero-image {
+    height: 130px;
+    background: url(Images/header-850.jpg) no-repeat;
+  }
+
+  .content .home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 549px) {
+  .home-hero-image {
+    display: none;
+  }
+
+  .content .home {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
